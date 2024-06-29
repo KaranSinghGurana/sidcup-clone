@@ -7,7 +7,20 @@ document.addEventListener("mousemove",(dets)=>{
  crsrBlur.style.top=dets.y-250+"px";
 })
 
+var h4all=document.querySelectorAll("#nav h4");
+h4all.forEach(function(elem){
+   elem.addEventListener("mouseenter",function(){
+      crsr.style.scale=3;
+      crsr.style.border="1px solid #fff"
+      crsr.style.backgroundColor="transparent"
+   })
 
+elem.addEventListener("mouseleave",function(){
+   crsr.style.scale=1;
+   crsr.style.border="none";
+   crsr.style.backgroundColor="intial";
+})
+})
 gsap.to("#nav",{
      backgroundColor:"#000",
      duration:0.5,
