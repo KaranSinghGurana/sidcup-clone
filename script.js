@@ -45,3 +45,68 @@ gsap.to("#main",{
       scrub:2
    }
 })
+
+gsap.from("#about-us,#about-us-in",{
+   y:50,
+   opacity:0,
+   duration:1,
+   scrollTrigger:{
+trigger:"#about-us",
+scroller:"body",
+start:"top 60%",
+end:"top 55%",
+scrub:3
+   }
+
+})
+
+gsap.from(".card",{
+   y:30,
+   opacity:0,
+   duration:1,
+   scrollTrigger:{
+trigger:"#card-containers",
+scroller:"body",
+start:"top 60%",
+end:"top 45%",
+scrub:1
+   }
+
+})
+
+gsap.from("#colan1",{
+   y:-70,
+   x:-70,
+   duration:1,
+   scrollTrigger:{
+trigger:".page3",
+scroller:"body",
+start:"top 60%",
+end:"top 55%",
+scrub:3
+   }
+})
+gsap.from("#colan2",{
+   y:70,
+   x:70,
+   duration:1,
+   scrollTrigger:{
+trigger:".page3",
+scroller:"body",
+start:"top 55%",
+end:"top 45%",
+scrub:3
+   }
+})
+
+gsap.from("#page4 h1", {
+   y: 50,
+   scrollTrigger: {
+       trigger: "#page4 h1",
+       scroller: "body",
+       // markers:true,
+       start: "top 70%",
+       end: "top 65%",
+       scrub: 3,
+   },
+});

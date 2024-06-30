@@ -313,6 +313,142 @@ bottom: 20px;
     top: 21%;
 }
 .page3 #colan2{
-    right: 15%;
-    bottom: 21%;
+    right: 17%;
+    bottom: 23%;
+}
+
+#page4{
+    height: 30vh;
+    width: 100%;
+position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+
+}
+.elem{
+height: 70%;
+width: 27%;
+border-radius: 20px;
+overflow: hidden;
+position: relative;
+
+
+
+}
+
+.elem h2{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: #95c11e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    font-weight: 800;
+    z-index: 10;
+    color: #000;
+    transition: all ease 0.6s;
+    
+}
+
+.elem img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    scale: 1.5;
+    transition: all ease 0.5s;
+
+}
+.elem h2:hover{
+  color: #fff;
+  background-color: transparent;
+}
+.elem img:hover{
+  scale: 1;
+}
+#page4 h1{
+    position: absolute;
+    font-size: 80px;
+    text-transform: uppercase;
+    font-family: "gilroy";
+    -webkit-text-stroke: 2px rgb(255, 255, 255);
+    color: transparent;
+    top: -15%;
+}
+
+
+.footer{
+    height: 40vh;
+    width: 100%;
+    background: linear-gradient(to bottom left,#3AB034, #8AD227);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+   
+}
+.footer>img{
+    height: 100%;
+    width: 30%;
+    position: absolute;
+    left: 0;
+    z-index: 0;
+}
+
+
+.f1 img {
+    height: 120px;
+}
+
+.f1,
+.f2,
+.f3,
+.f4 {
+    width: fit-content;
+    position: relative;
+    z-index: 99;
+    /* background-color: red; */
+}
+
+.f2 h3 {
+    font-size: 1.6vw;
+    white-space: nowrap;
+    text-transform: uppercase;
+    color: #000;
+    font-weight: 900;
+    margin-bottom: 8px;
+}
+
+.f3 h3 {
+    font-size: 1.6vw;
+    white-space: nowrap;
+    text-transform: uppercase;
+    color: #000;
+    font-weight: 800;
+    margin-bottom: 8px;
+}
+
+.f4 h4 {
+    font-size: 1vw;
+    white-space: nowrap;
+    text-transform: uppercase;
+    color: #000;
+    font-weight: 600;
+    line-height: 20px;
+    margin-bottom: 8px;
+}
+
+body::-webkit-scrollbar{
+    display: block;
+    width: 8px;
+    background: linear-gradient(to right,#95c11e,black);
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color: white;
+    border-radius: 50px;
+
 }
